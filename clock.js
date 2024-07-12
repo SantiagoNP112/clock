@@ -33,7 +33,7 @@ const updateTime = () => {
     minuteHand.style.transform = `rotate(${minToDeg}deg)`;
     hourHand.style.transform = `rotate(${hrToDeg})`;
 }  
-  
+/* monkey */
 
 setInterval(updateTime, 1000);
 
