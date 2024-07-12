@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Times New Roman", sans-serif, Times, serif;
 }
 
 :root{
-    --primary-color: #f6f7fb;
+    --primary-color: #cccccc;
     --white-color: #fff;
     --black-color: #18191a;
     --red-color: #e74c3c;
@@ -18,6 +18,7 @@ body{
     align-items: center;
     justify-content: center;
     background: var(--primary-color);
+    transition: background 1s;
 }
 
 /* switch mode */
@@ -46,7 +47,8 @@ body.dark{
     align-items: center;
     justify-content: center;
     background: var(--white-color);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transition: background 1s;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
     position:relative;
 }
 
@@ -62,6 +64,7 @@ body.dark{
     font-size: 30px;
     font-weight: 600;
     transform: rotate(calc(var(--i) * (-360deg / 12)));
+    transition: color 1s;
     color: var(--black-color);
 }
 
@@ -71,6 +74,7 @@ body.dark{
     width: 10px;
     display: flex;
     justify-content: center;
+    transition: 1s;
 }
 
 .indicator::before{
@@ -82,6 +86,7 @@ body.dark{
     z-index: 100;
     background: var(--black-color);
     border: 4px solid var(--red-color);
+    transition: 1s;
 }
 
 
@@ -94,6 +99,7 @@ body.dark{
     border-radius: 25px;
     transform-origin: bottom;
     background: var(--red-color);
+    transition: background 1s;
 }
 
 .hand.minute{
